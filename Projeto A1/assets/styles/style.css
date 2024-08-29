@@ -4,6 +4,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -53,6 +54,11 @@ body{
     font-size: 30px;
 }
 
+.infos i:hover{
+    color: #2d0057;
+    font-size: 30px;
+}
+
 .pin{
     display: flex;
     flex-direction: column;
@@ -76,6 +82,7 @@ body{
     color: #5f0eab;
 }
 
+
 .forms p{
     font-weight: 500;
 }
@@ -91,6 +98,13 @@ body{
     border: none;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.inputs input:focus{
+    color: #30025b;
+    background-color: #e8daf5;
+    border: 3px solid;
 }
 
 
@@ -119,6 +133,22 @@ body{
     justify-content: flex-start;
 }
 
+@media (min-width:768px) and  (max-width: 1017px) {
+    
+    .inputs button{
+        width: 100%;
+    }
+        
+    .inputs button:hover{
+        width: 100%;
+        background-color: #30025b;
+        color: #F0F0F8;
+        font-weight: 600;
+        height: 40px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .main-container {
         display: flex;
@@ -133,8 +163,10 @@ body{
 
     .infos{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
+        margin-top: -90px;
+        align-items: flex-start;
     }
 
     .infos i{
@@ -145,7 +177,17 @@ body{
         font-size: 15px;
     }
 
+    .pin{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .pin p{
+        font-size: 12px;
+    }
+
     .forms{
+        margin-top: -90px;
         margin-bottom: 150px;
     }
 
@@ -160,8 +202,6 @@ body{
         font-weight: 600;
         height: 40px;
     }
-
-
 
 
 }
