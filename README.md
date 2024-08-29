@@ -1,5 +1,5 @@
-## Projetos Desenvolvido no Âmbito da Aula de Desenvolimento Web
+# Projetos Desenvolvido no Âmbito da Aula de Desenvolimento Web
 
-# A1:
+## A1:
 - Slide Show
 - Formulário Responsivo
